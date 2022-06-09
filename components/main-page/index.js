@@ -1,6 +1,8 @@
 import React from 'react';
-import OrangeEllipse from '../orange-ellipse';
-import PurpleEllipse from '../purple-ellipse';
+import Header from '~/components/header';
+import OrangeEllipse from '~/components/orange-ellipse';
+import PurpleEllipse from '~/components/purple-ellipse';
+import MainMenu from '../main-menu';
 import { MainPageComponent, MainPageContainer } from './styled';
 
 export default function MainPage() {
@@ -8,7 +10,8 @@ export default function MainPage() {
     <OrangeEllipse />
     <PurpleEllipse />
     <MainPageContainer>
-      aLLOOOO
+      <Header />
+      <MainMenu />
     </MainPageContainer>
   </MainPageComponent>
 }
