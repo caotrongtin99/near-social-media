@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const HeaderWrap = styled.div`
+  width: 100%;
   padding: 1rem 0 1.2rem 0;
   display: flex;
   justify-content: space-between;
@@ -8,13 +9,12 @@ export const HeaderWrap = styled.div`
 `
 
 export const LeftHeader = styled.div`
-  width: 20%;
-  margin-right: 1.5rem;
+  width: 23%;
 `
 
 export const CenterHeader = styled.div`
-  width: 60%;
-  margin: 0 -1.5rem;
+  width: 50%;
+  margin: 0 2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,9 +32,10 @@ export const CenterHeader = styled.div`
   }
 `
 
+// 1046 204
+
 export const RightHeader = styled.div`
-  width: 20%;
-  margin-left: 1.5rem;
+  width: 23%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +47,6 @@ export const RightHeader = styled.div`
   }
 
   .info {
-    margin: -10px;
     display: flex;
     align-items: center;
     justify-content: flex-end;

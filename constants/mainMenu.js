@@ -1,40 +1,40 @@
-import { HomeIcon } from "~/components/icons";
+import BellIcon from '~/public/icons/bell.svg'
 
 export const mainMenuItems = [
   {
     name: 'Home',
-    icon: <HomeIcon />
+    icon: <BellIcon />
   },
   {
     name: 'Explore',
-    icon: <HomeIcon />
+    icon: <BellIcon />
   },
   {
     name: 'Notification',
-    icon: <HomeIcon />
+    icon: <BellIcon />
   },
   {
     name: 'Messages',
-    icon: <HomeIcon />
+    icon: <BellIcon />
   },
   {
     name: 'Topics',
-    icon: <HomeIcon />
+    icon: <BellIcon />
   },
   {
     name: 'Bookmarks',
-    icon: <HomeIcon />
+    icon: <BellIcon />
   },
   {
     name: 'Wallet',
-    icon: <HomeIcon />
+    icon: <BellIcon />
   },
   {
     name: 'Profile',
-    icon: <HomeIcon />
+    icon: <BellIcon />
   },
   {
     name: 'More',
-    icon: <HomeIcon />
+    icon: <BellIcon />
   }
 ]

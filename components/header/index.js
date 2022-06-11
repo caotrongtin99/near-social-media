@@ -43,6 +43,8 @@ export default function  Header() {
             <Image 
               src={avatar}
               alt="avatar"
+              width={40}
+              height={40}
             />
           </div>
         </div>

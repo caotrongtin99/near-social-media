@@ -6,5 +6,6 @@ export const MainPageComponent = styled.div`
   height: 100vh;
 `
 export const MainPageContainer = styled.div`
+  position: relative;
   padding: 0 10rem;
 `
