@@ -35,3 +35,24 @@ export function logout() {
 export function login() {
   window.walletConnection.requestSignIn(nearConfig.contractName);
 }
+
+export async function viewState() {
+  let account = window.walletConnection.account();
+  console.log({ account })
+  // Use near-api-js to perform the call. Since this is using the JS SDK, 
+  // the jsContract boolean must be set to true.
+  console.log({ nearConfig: nearConfig.contractName })
+  const result = await account.viewFunction(
+    nearConfig.contractName, 
+    'get_posts', 
+    {
+      from_index: 1,
+      limit: 999
+    },
+    { 
+      jsContract: true
+    }
+  )
+
+  return result
+}

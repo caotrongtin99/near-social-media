@@ -1,4 +1,4 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME || "testnet";
+const CONTRACT_NAME = process.env.NEXT_PUBLIC_CONTRACT_NAME || "dev-1652100430918-60749606761829";
 
 function getConfig(env) {
   switch(env) {
@@ -14,6 +14,13 @@ function getConfig(env) {
     // You can move production to mainnet if that is applicable.
     case 'production':
     case 'development':
+      return {
+        networkId: 'testnet',
+        nodeUrl: 'https://rpc.testnet.near.org',
+        contractName: CONTRACT_NAME,
+        walletUrl: 'https://wallet.testnet.near.org',
+        helperUrl: 'https://helper.testnet.near.org'
+      };
     case 'testnet':
       return {
         networkId: 'testnet',

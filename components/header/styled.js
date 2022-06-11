@@ -9,11 +9,17 @@ export const HeaderWrap = styled.div`
 `
 
 export const LeftHeader = styled.div`
-  width: 23%;
+  @media only screen and (min-width: 1400px) {
+    width: 23%
+  }
+  width: 25%;
 `
 
 export const CenterHeader = styled.div`
-  width: 50%;
+  @media only screen and (min-width: 1400px) {
+    width: 50%
+  }
+  width: 46%;
   margin: 0 2%;
   display: flex;
   justify-content: space-between;
@@ -35,7 +41,10 @@ export const CenterHeader = styled.div`
 // 1046 204
 
 export const RightHeader = styled.div`
-  width: 23%;
+  @media only screen and (min-width: 1400px) {
+    width: 23%
+  }
+  width: 25%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +61,7 @@ export const RightHeader = styled.div`
     justify-content: flex-end;
     
     .item {
-      margin: 1rem;
+      margin: 0.7rem;
     }
 
     p {

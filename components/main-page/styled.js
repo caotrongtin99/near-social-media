@@ -9,3 +9,7 @@ export const MainPageContainer = styled.div`
   position: relative;
   padding: 0 10rem;
 `
+export const MainContentWrap = styled.div`
+  display: flex;
+  width: 100%;
+`
