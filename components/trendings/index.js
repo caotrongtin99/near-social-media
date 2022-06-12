@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import MoreIcon from '~/public/icons/more-horizontal.svg'
+
 const TrendingWrap = styled.section`
-  padding: 1rem;
+  padding: 1rem 1rem 1.2rem 1rem;
   border-radius: 12px;
   background-color: var(--background-black);
+  margin-bottom: 1rem;
 
   h4 {
     margin-bottom: 1.2rem;
@@ -44,7 +46,6 @@ const TrendingWrap = styled.section`
       padding-bottom:3px;
       font-size: 0.8rem;
     }
-
   }
 `
 
