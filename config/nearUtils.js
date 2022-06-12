@@ -11,6 +11,7 @@ export async function initContract() {
     )
   );
 
+  console.log({ wallet :  new WalletConnection(near) })
   window.walletConnection = new WalletConnection(near);
 
   window.accountId = window.walletConnection.getAccountId();
@@ -38,10 +39,8 @@ export function login() {
 
 export async function viewState() {
   let account = window.walletConnection.account();
-  console.log({ account })
   // Use near-api-js to perform the call. Since this is using the JS SDK, 
   // the jsContract boolean must be set to true.
-  console.log({ nearConfig: nearConfig.contractName })
   const result = await account.viewFunction(
     nearConfig.contractName, 
     'get_posts', 

@@ -32,7 +32,7 @@ export const CenterHeader = styled.div`
 
   .tabs {
     b {
-      margin-right: 1.5rem;
+      margin-left: 1.5rem;
       font-weight: 800;
     }
   }

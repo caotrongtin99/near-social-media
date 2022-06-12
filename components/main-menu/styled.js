@@ -5,6 +5,7 @@ export const MainMenuWrap = styled.nav`
     width: 23%
   }
   width: 25%;
+  height: auto;
   display: flex;
   flex-direction: column;
   background-color: var(--background-black);

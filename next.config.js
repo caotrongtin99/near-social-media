@@ -9,6 +9,9 @@ const nextConfig = {
 
     return config
   },
+  images: {
+    domains: ['ipfs.infura.io'],
+  },
 }
 
 module.exports = nextConfig

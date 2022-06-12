@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const MainPageComponent = styled.div`
   position: relative;
   background-color: black;
-  height: 100vh;
 `
 export const MainPageContainer = styled.div`
   position: relative;
@@ -11,5 +10,6 @@ export const MainPageContainer = styled.div`
 `
 export const MainContentWrap = styled.div`
   display: flex;
+  align-items: flex-start;
   width: 100%;
 `
