@@ -4,28 +4,31 @@ import getConfig from "./";
 const nearConfig = getConfig(process.env.NODE_ENV || "testnet");
 
 export async function initContract() {
-  const near = await connect(
-    Object.assign(
-      { deps: { keyStore: new keyStores.BrowserLocalStorageKeyStore() } },
-      nearConfig
-    )
-  );
-
-  console.log({ wallet :  new WalletConnection(near) })
-  window.walletConnection = new WalletConnection(near);
-
-  window.accountId = window.walletConnection.getAccountId();
-
-  window.contract = await new Contract(
-    window.walletConnection.account(),
-    nearConfig.contractName,
-    {
-      viewMethods: [
-        "get_posts",
-      ],
-      changeMethods: [],
-    }
-  );
+  try {
+    const near = await connect(
+      Object.assign(
+        { deps: { keyStore: new keyStores.BrowserLocalStorageKeyStore() } },
+        nearConfig
+      )
+    );
+  
+    window.walletConnection = new WalletConnection(near);
+  
+    window.accountId = window.walletConnection.getAccountId();
+  
+    window.contract = await new Contract(
+      window.walletConnection.account(),
+      nearConfig.contractName,
+      {
+        viewMethods: [
+          "get_posts",
+        ],
+        changeMethods: [],
+      }
+    ); 
+  } catch (error) {
+    console.log(error)
+  }
 }
 
 export function logout() {

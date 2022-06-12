@@ -10,19 +10,24 @@ export default function Newfeeds() {
   const [posts, setPosts] = useState([])
   
   useEffect(() => {
-    if (typeof window !== "undefined" && window?.walletConnection && window.walletConnection.isSignedIn()) {
-      viewState()
-      .then(returnedValue => {
-        debugger
-        setPosts(returnedValue)
-      })
-      .catch(err => {
-        setPosts([])
-        console.log({ err })
-      })
-    }
+    setTimeout(() => {
+      try {
+        if (typeof window !== "undefined" && window?.walletConnection && window.walletConnection.isSignedIn()) {
+          viewState()
+          .then(returnedValue => {
+            setPosts(returnedValue)
+          })
+          .catch(err => {
+            setPosts([])
+          })
+        }
+      } catch (error) {
+        console.log({ error })
+      }
+    }, 1000)
   }, [])
 
+  console.log({ posts })
 
   const formatPosts = useMemo(() => {
     return posts.filter(post => post).map(post => ({
@@ -43,6 +48,5 @@ export default function Newfeeds() {
   return <NewFeedsWrap>
     <YourMind />
       {formatPosts.map(post => <Post key={post?.id} post={post} />)}
-    <Post />
   </NewFeedsWrap>
 }

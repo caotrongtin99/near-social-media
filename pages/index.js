@@ -1,6 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import MainPage from '~/components/main-page'
+import dynamic from 'next/dynamic'
+
+const MainPage = dynamic(() => import("~/components/main-page"), {
+  ssr: false,
+});
 
 export default function Home(props) {
   return (

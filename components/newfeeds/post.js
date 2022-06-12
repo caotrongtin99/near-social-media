@@ -12,7 +12,6 @@ import ShareIcon from '~/public/icons/share.svg'
 import { nFormatter } from '~/helpers/formater'
 
 export default function Post({ post }) {
-  console.log({ post })
   return <PostWrap>
     <div className='head'>
       <div className='left'>

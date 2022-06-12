@@ -1,13 +1,20 @@
 import BellIcon from '~/public/icons/bell.svg'
+import HomeIcon from '~/public/icons/home.svg'
+import HashIcon from '~/public/icons/hash.svg'
+import MessageIcon from '~/public/icons/message-square.svg'
+import TrendingIcon from '~/public/icons/trending-up.svg'
+import WalletIcon from '~/public/icons/bx_wallet.svg'
+import UserIcon from '~/public/icons/user.svg'
+import MoreIcon from '~/public/icons/more-horizontal.svg'
 
 export const mainMenuItems = [
   {
     name: 'Home',
-    icon: <BellIcon />
+    icon: <HomeIcon />
   },
   {
     name: 'Explore',
-    icon: <BellIcon />
+    icon: <HashIcon />
   },
   {
     name: 'Notification',
@@ -15,26 +22,26 @@ export const mainMenuItems = [
   },
   {
     name: 'Messages',
-    icon: <BellIcon />
+    icon: <MessageIcon />
   },
   {
     name: 'Topics',
-    icon: <BellIcon />
+    icon: <TrendingIcon />
   },
   {
     name: 'Bookmarks',
-    icon: <BellIcon />
+    icon: <TrendingIcon />
   },
   {
     name: 'Wallet',
-    icon: <BellIcon />
+    icon: <WalletIcon />
   },
   {
     name: 'Profile',
-    icon: <BellIcon />
+    icon: <UserIcon />
   },
   {
     name: 'More',
-    icon: <BellIcon />
+    icon: <MoreIcon />
   }
 ]

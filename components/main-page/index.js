@@ -2,6 +2,7 @@ import React, { useState, useCallback, useEffect } from 'react';
 import Header from '~/components/header';
 import OrangeEllipse from '~/components/orange-ellipse';
 import PurpleEllipse from '~/components/purple-ellipse';
+import LeftContent from '../left-content';
 import MainMenu from '../main-menu';
 import Newfeeds from '../newfeeds';
 import RightContent from '../right-content';
@@ -14,7 +15,7 @@ export default function MainPage(props) {
     <MainPageContainer>
       <Header />
       <MainContentWrap>
-        <MainMenu />
+        <LeftContent />
         <Newfeeds />
         <RightContent />
       </MainContentWrap>

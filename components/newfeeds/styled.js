@@ -70,6 +70,11 @@ export const PostWrap = styled.div`
 
     .number {
       margin-left: 0.6rem;
+      font-weight: 700;
+    }
+
+    .liked {
+      color: #FE8668;
     }
   }
 `

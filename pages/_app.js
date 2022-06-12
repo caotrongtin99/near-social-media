@@ -6,10 +6,10 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     initContract().then(() => {
-      console.log('---------------- near loaded -----------------', window.walletConnection)
-      console.log('----------------------- is sign in ------------', window.walletConnection.isSignedIn())
-      if (typeof window !== "undefined" && !window.walletConnection.isSignedIn()) {
-        debugger
+      console.log({
+        wallet: window?.walletConnection
+      })
+      if (typeof window !== "undefined" && !window?.walletConnection.isSignedIn()) {
         login()
       }
     }).catch(error => {

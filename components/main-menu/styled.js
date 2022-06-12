@@ -1,10 +1,7 @@
 import styled from 'styled-components'
 
 export const MainMenuWrap = styled.nav`
-  @media only screen and (min-width: 1400px) {
-    width: 23%
-  }
-  width: 25%;
+
   height: auto;
   display: flex;
   flex-direction: column;
@@ -18,15 +15,19 @@ export const MainMenuItem = styled.div`
   justify-content: flex-start;
   align-items: center;
 
+  path: {
+    stroke: white !important;
+  }
+
   svg {
     margin-right: 1.7rem;
+    color: white;
   }
 
   &:hover {
     color: #4269F2;
-
     svg {
-      color: #4269F2;
+      path { stroke: #4269F2; }
     }
   }
 
@@ -38,4 +39,16 @@ export const MainMenuItem = styled.div`
 
 export const MainMenuContainer = styled.div`
   padding: 1rem 2.2rem;
+
+  .say-button {
+    text-align: center;
+    padding: 12px 60px;
+    gap: 8px;
+    background: linear-gradient(90deg, #9300E9 0%, #5300FF 100%);
+    border-radius: 6px;
+    color: white;
+    font-weight: 800;
+    border: unset;
+    font-size: 1rem;
+  }
 `
