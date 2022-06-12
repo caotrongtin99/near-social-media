@@ -8,6 +8,7 @@ const SearchBarWrap = styled.div`
   padding: 1rem;
   border-radius: 12px;
   background-color: var(--background-black);
+  margin-bottom: 1rem;
 
   .search-icon {
     margin-right: 1rem;
@@ -20,7 +21,7 @@ const SearchBarWrap = styled.div`
     outline: none;
     font-weight: 700;
     color: var(--text-gray);
-}
+  }
 `
 
 export default function SearchBar() {

@@ -10,6 +10,4 @@ top: 190px;
 background: #FF7A00;
 opacity: 0.5;
 filter: blur(400px);
-
-z-index: 0;
 `
