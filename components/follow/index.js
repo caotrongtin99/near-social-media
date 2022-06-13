@@ -10,7 +10,7 @@ const FollowWrap = styled.section`
   background-color: var(--background-black);
 
   h4 {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.7rem;
     font-size: 1.3rem;
     font-weight: 700;
   }

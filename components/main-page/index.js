@@ -1,17 +1,13 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React from 'react';
 import Header from '~/components/header';
-import OrangeEllipse from '~/components/orange-ellipse';
-import PurpleEllipse from '~/components/purple-ellipse';
+import MasterLayout from '~/layouts/masterLayout';
 import LeftContent from '../left-content';
-import MainMenu from '../main-menu';
 import Newfeeds from '../newfeeds';
 import RightContent from '../right-content';
 import { MainContentWrap, MainPageComponent, MainPageContainer } from './styled';
 
 export default function MainPage(props) {
-  return <MainPageComponent>
-    <OrangeEllipse />
-    <PurpleEllipse />
+  return <MasterLayout>
     <MainPageContainer>
       <Header />
       <MainContentWrap>
@@ -20,5 +16,5 @@ export default function MainPage(props) {
         <RightContent />
       </MainContentWrap>
     </MainPageContainer>
-  </MainPageComponent>
+  </MasterLayout>
 }
