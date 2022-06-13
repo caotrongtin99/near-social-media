@@ -6,9 +6,6 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     initContract().then(() => {
-      console.log({
-        wallet: window?.walletConnection
-      })
       if (typeof window !== "undefined" && !window?.walletConnection.isSignedIn()) {
         login()
       }

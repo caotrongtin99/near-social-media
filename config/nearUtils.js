@@ -32,8 +32,10 @@ export async function initContract() {
 }
 
 export function logout() {
-  window.walletConnection.signOut();
-  window.location.replace(window.location.origin + window.location.pathname);
+  if (typeof window !== 'undefined' && window?.walletConnection) {
+    window.walletConnection.signOut();
+    window.location.replace(window.location.origin + window.location.pathname);
+  }
 }
 
 export function login() {
