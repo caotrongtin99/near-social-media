@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import MainMenu from '../main-menu'
 
-const LeftContentWrap = styled.section`
+const LeftContentWrap = styled.aside`
   display: flex;
   flex-direction: column;
   @media only screen and (min-width: 1400px) {

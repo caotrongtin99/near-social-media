@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import SearchIcon from '~/public/icons/search.svg'
 
-const SearchBarWrap = styled.div`
+const SearchBarWrap = styled.section`
   display: flex;
   align-items:center;
   padding: 1rem;

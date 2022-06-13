@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const NewFeedsWrap = styled.div`
+export const NewFeedsWrap = styled.section`
   @media only screen and (min-width: 1400px) {
     width: 50%
   }

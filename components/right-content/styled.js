@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const RightContentWrap = styled.div`
+export const RightContentWrap = styled.aside`
   @media only screen and (min-width: 1400px) {
     width: 23%
   }
